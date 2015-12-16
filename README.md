@@ -43,12 +43,6 @@ Update modules section of your tiapp.xml like below:
     </modules>
 
 
-###Step 2
-Project clean.
-Copy tiIntercom\assets\Intercom.bundle to the project folder app\assets\iphone
-Run Titanium project.
-It's end.!
-
 ###Step 3
 [More Information](https://github.com/intercom/intercom-ios)
 

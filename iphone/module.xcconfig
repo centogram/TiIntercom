@@ -36,6 +36,6 @@
 //OTHER_LDFLAGS=$(inherited) -F"/Users/Icarus/Downloads/intercom-ios-master" -framework Intercom
 //OTHER_LDFLAGS=$(inherited) -framework Intercom
 
-FRAMEWORK_SEARCH_PATHS=~/Library/Application\ Support/Titanium/modules/iphone/ti.intercom.ios/1.0.0/platform
+FRAMEWORK_SEARCH_PATHS=$(SRCROOT)/../../modules/iphone/ti.intercom.ios/1.0.0/platform
 
 OTHER_LDFLAGS=$(inherited) -framework Intercom -framework ImageIO -framework MobileCoreServices -framework SystemConfiguration -framework AudioToolbox -framework QuartzCore -framework Security -framework CoreGraphics
