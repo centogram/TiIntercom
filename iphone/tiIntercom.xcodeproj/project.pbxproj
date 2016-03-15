@@ -33,7 +33,6 @@
 		A5D0D6F71B0D88C700FCF3AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D0D6F61B0D88C700FCF3AB /* QuartzCore.framework */; };
 		A5D0D6F91B0D88CF00FCF3AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D0D6F81B0D88CF00FCF3AB /* Security.framework */; };
 		A5D0D6FB1B0D88D800FCF3AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D0D6FA1B0D88D800FCF3AB /* CoreGraphics.framework */; };
-		A5D0D6FD1B0D88E200FCF3AB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D0D6FC1B0D88E200FCF3AB /* libicucore.dylib */; };
 		A5FF5E301B0F20B100455794 /* Intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FF5E2F1B0F20B100455794 /* Intercom.framework */; };
 		AA747D9F0F9514B9006C5449 /* TiIntercomIos_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiIntercomIos_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -62,7 +61,6 @@
 		A5D0D6F61B0D88C700FCF3AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A5D0D6F81B0D88CF00FCF3AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A5D0D6FA1B0D88D800FCF3AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A5D0D6FC1B0D88E200FCF3AB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		A5FF5E2F1B0F20B100455794 /* Intercom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Intercom.framework; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiIntercomIos_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiIntercomIos_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,7 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5FF5E301B0F20B100455794 /* Intercom.framework in Frameworks */,
-				A5D0D6FD1B0D88E200FCF3AB /* libicucore.dylib in Frameworks */,
 				A5D0D6FB1B0D88D800FCF3AB /* CoreGraphics.framework in Frameworks */,
 				A5D0D6F91B0D88CF00FCF3AB /* Security.framework in Frameworks */,
 				A5D0D6F71B0D88C700FCF3AB /* QuartzCore.framework in Frameworks */,
@@ -113,7 +110,6 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5D0D6FC1B0D88E200FCF3AB /* libicucore.dylib */,
 				A5D0D6FA1B0D88D800FCF3AB /* CoreGraphics.framework */,
 				A5D0D6F81B0D88CF00FCF3AB /* Security.framework */,
 				A5D0D6F61B0D88C700FCF3AB /* QuartzCore.framework */,

@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 1.0.1
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: tiIntercom
@@ -15,4 +15,4 @@ name: tiIntercom
 moduleid: ti.intercom.ios
 guid: b749dbf8-38ad-45e4-9f1c-bf843ae690a2
 platform: iphone
-minsdk: 3.5.1.GA
+minsdk: 5.1.1.GA

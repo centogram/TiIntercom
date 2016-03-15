@@ -98,7 +98,7 @@
 -(void)registerUserWithEmail:(id)email
 {
     ENSURE_SINGLE_ARG(email, NSString);
-    [Intercom registerUserWithEmail:email];
+        
     NSLog(@"[DEBUG] Intercom registers user with email: %@", email);
 }
 
