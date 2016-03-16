@@ -115,6 +115,24 @@
     NSLog(@"[DEBUG] Intercom registers user with user id: %@", userId);
 }
 
+-(void)updateUserWithAttributes:(id)args
+{
+    ENSURE_SINGLE_ARG(args, NSDictionary);
+    [Intercom updateUserWithAttributes:args];
+    NSLog(@"[DEBUG] Intercom update user with attributes: %@", args);
+}
+
+-(void)setDeviceToken:(id)deviceToken
+{
+    ENSURE_SINGLE_ARG(deviceToken, NSData);
+    [Intercom setDeviceToken:deviceToken];
+    NSLog(@"[DEBUG] Intercom registers device token for push notifications: %@", deviceToken);
+}
+
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [Intercom setDeviceToken:deviceToken];
+}
+
 -(void)presentMessageComposer:(id)args
 {
     ENSURE_UI_THREAD(presentMessageComposer, args);

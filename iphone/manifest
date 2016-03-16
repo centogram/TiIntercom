@@ -3,12 +3,12 @@
 # during compilation, packaging, distribution, etc.
 #
 version: 1.0.1
-apiversion: 2
+apiversion: 3
 architectures: armv7 arm64 i386 x86_64
 description: tiIntercom
-author: Your Name
-license: Specify your license
-copyright: Copyright (c) 2015 by Your Company
+author: Jerod Fritz
+license: Whatever is legal
+copyright: Copyright (c) 2015 by Your Mom
 
 # these should not be edited
 name: tiIntercom
