@@ -2,8 +2,8 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.1
-apiversion: 3
+version: 1.0.2
+apiversion: 4
 architectures: armv7 arm64 i386 x86_64
 description: tiIntercom
 author: Jerod Fritz
