@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+#error This version (2.3.19) of Intercom for iOS supports iOS 7.0 upwards.
+#endif
+
 NS_ASSUME_NONNULL_BEGIN
 
 // Use these values to constrain an incoming notification view to a defined section of the window.
