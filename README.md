@@ -1,4 +1,4 @@
-#Intercom iphone module for Intercom IOS SDK version 2.2.3
+#Intercom iphone module for Intercom IOS SDK version 2.3.19
 
 Test Environment
 ========
