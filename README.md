@@ -1,11 +1,11 @@
-#Intercom iphone module for Intercom IOS SDK version 2.2.3
+#Intercom iphone module for Intercom IOS SDK version 2.3.19
 
 Test Environment
 ========
 
-Titanium Mobile SDK 2.1.0GA.
-iOS SDK 4.3.3.
-Intercom IOS SDK Version 2.2.3
+Titanium Mobile SDK 5.2.1.GA.
+iOS SDK 9.3
+Intercom IOS SDK Version 2.3.19
 
 
 ## License
@@ -34,7 +34,7 @@ Intercom IOS SDK Version 2.2.3
 ##Installation for Mac OS X
 ###Step 1
 Download AviaryModule project.
-Copy the ti.intercom.ios-iphone-1.0.0.zip into your Titanium SDK directory: http://docs.appcelerator.com/titanium/2.0/#!/guide/Titanium_Modules
+Copy the ti.intercom.ios-iphone-1.0.2.zip into your Titanium SDK directory: http://docs.appcelerator.com/titanium/2.0/#!/guide/Titanium_Modules
 
 Update modules section of your tiapp.xml like below:
 
@@ -62,13 +62,13 @@ API
 	    api_key: '<#ios_sdk-...#>',
 	    app_id: '<#your-app-id#>'
 	});
-	
+
 	// Login with user email
 	TiIntercom.registerUserWithEmail("<#user@email.com#>");
-	
+
 	// Log event with name
 	TiIntercom.logEventWithName("<#eventName#>")
-	
+
 	// Log event with name and data
 	// Intercom does not buffer log during offline
 	TiIntercom.logEventWithNameAndData({
@@ -76,8 +76,8 @@ API
 		'date':'<#date#>',
 		'data':'<#data#>'
 	})
-	
-	
+
+
 Author
 ========
 
