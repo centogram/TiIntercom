@@ -33,8 +33,8 @@ Intercom IOS SDK Version 2.3.19
 
 ##Installation for Mac OS X
 ###Step 1
-Download AviaryModule project.
-Copy the ti.intercom.ios-iphone-1.0.2.zip into your Titanium SDK directory: http://docs.appcelerator.com/titanium/2.0/#!/guide/Titanium_Modules
+Download the project.
+Copy the ti.intercom.ios-iphone-[version].zip into your Titanium SDK directory: http://docs.appcelerator.com/titanium/latest/#!/guide/Titanium_Modules
 
 Update modules section of your tiapp.xml like below:
 
@@ -45,14 +45,13 @@ Update modules section of your tiapp.xml like below:
 
 ###Step 2
 Project clean.
-Copy tiIntercom\assets\Intercom.bundle to the project folder app\assets\iphone
+Copy TiIntercom\assets\Intercom.bundle to the project folder app\assets\iphone
 Run Titanium project.
-It's end.!
 
 ###Step 3
 [More Information](https://github.com/intercom/intercom-ios)
 
-API
+EXAMPLEs
 ========
 	// Require the module
 	var TiIntercom = require('ti.intercom.ios');
@@ -62,6 +61,9 @@ API
 	    api_key: '<#ios_sdk-...#>',
 	    app_id: '<#your-app-id#>'
 	});
+	
+    // Login with ID
+	TiIntercom.registerUserWithUserId(user._id);
 
 	// Login with user email
 	TiIntercom.registerUserWithEmail("<#user@email.com#>");
@@ -77,9 +79,14 @@ API
 		'data':'<#data#>'
 	})
 
+    // Update attributes
+    TiIntercom.updateUserWithAttributes({
+		user_id : user._id,
+		email : user.email,
+		created_at : user.DateCreated,
+		name : user.profile.fname + " " + user.profile.lname
+	});
 
-Author
-========
+    // Register for Push Notifications
+    TiIntercom.setDeviceToken(deviceToken);
 
-Icarus So.
-(icarus.so.ch@gmail.com)

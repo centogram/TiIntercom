@@ -1,3 +1,4 @@
-FRAMEWORK_SEARCH_PATHS=$(SRCROOT)/../../modules/iphone/ti.intercom.ios/1.0.2/platform
+FRAMEWORK_SEARCH_PATHS=$(SRCROOT)/../../modules/iphone/ti.intercom.ios/2.3.21/platform
 
-OTHER_LDFLAGS=$(inherited) -framework AssetsLibrary -framework ImageIO -framework MobileCoreServices -framework SystemConfiguration -framework AudioToolbox -framework QuartzCore -framework Security -framework CoreGraphics -framework Intercom -ObjC -all_load -fobjc-arc
+//OTHER_LDFLAGS=$(inherited) -framework AssetsLibrary -framework ImageIO -framework MobileCoreServices -framework SystemConfiguration -framework AudioToolbox -framework QuartzCore -framework Security -framework CoreGraphics -framework Intercom -ObjC -all_load -fobjc-arc
+OTHER_LDFLAGS = $(inherited) -ObjC -l"icucore" -l"xml2" -framework "AssetsLibrary" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "Intercom" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"

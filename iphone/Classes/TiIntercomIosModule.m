@@ -122,11 +122,30 @@
     NSLog(@"[DEBUG] Intercom update user with attributes: %@", args);
 }
 
--(void)setDeviceToken:(id)deviceToken
+-(void)setDeviceToken:(NSString *)devToken
 {
-    ENSURE_SINGLE_ARG(deviceToken, NSData);
-    [Intercom setDeviceToken:deviceToken];
-    NSLog(@"[DEBUG] Intercom registers device token for push notifications: %@", deviceToken);
+    //we have to convert device token from string to NSData
+    
+    const char * chars = [devToken UTF8String];
+    int i = 0;
+    int len = (int)devToken.length;
+    
+    NSMutableData *data = [NSMutableData dataWithCapacity:len / 2];
+    char byteChars[3] = {'\0','\0','\0'};
+    unsigned long wholeByte;
+    
+    while (i < len)
+    {
+        byteChars[0] = chars[i++];
+        byteChars[1] = chars[i++];
+        wholeByte = strtoul(byteChars, NULL, 16);
+        [data appendBytes:&wholeByte length:1];
+    }
+    
+    NSLog(@"[DEBUG] Intercom registers device for push notifications:  %@", data );
+    
+    [Intercom setDeviceToken:data];
+    
 }
 
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
