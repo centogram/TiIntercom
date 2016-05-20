@@ -1,11 +1,11 @@
-#Intercom iphone module for Intercom IOS SDK version 2.3.19
+#Intercom iphone module for Intercom IOS SDK
 
 Test Environment
 ========
 
 Titanium Mobile SDK 5.2.1.GA.
 iOS SDK 9.3
-Intercom IOS SDK Version 2.3.19
+Intercom IOS SDK Version 2.3.21
 
 
 ## License
